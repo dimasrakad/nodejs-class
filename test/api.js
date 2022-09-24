@@ -4,10 +4,10 @@
  */
 
 // Dependencies
-var app = require("./../index");
+var app = require("../index");
 var assert = require("assert");
 var http = require("http");
-var config = require("./../lib/config");
+var config = require("../lib/config");
 
 // Holder for Tests
 var api = {};
