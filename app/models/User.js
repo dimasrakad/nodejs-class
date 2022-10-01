@@ -14,18 +14,15 @@
 
 // module.exports = mongoose.model("User", userSchema);
 
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const User = mongoose.model('User', {
+const User = mongoose.model("User", {
   firstName: String,
   lastName: String,
   phone: String,
   hashedPassword: String,
-  warehouse: {
-    type: Schema.Types.ObjectId,
-    ref: "Warehouse"
-  }
+  warehouse: String,
 });
 
 module.exports = User;

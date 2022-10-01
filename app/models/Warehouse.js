@@ -5,10 +5,7 @@ const Warehouse = mongoose.model('Warehouse', {
   name: String,
   location: String,
   owner: String,
-  user: [{
-    type: Schema.Types.ObjectId,
-    ref: "User"
-  }]
+  user: []
 });
 
 module.exports = Warehouse;
